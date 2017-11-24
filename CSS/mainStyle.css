@@ -61,6 +61,34 @@ li.active a {
   color: #333;
 }
 
-.footer{
+.clear{
     clear: both;
+
+}
+
+.footer{
+	padding:2px;
+background-color: grey;
+ background-size: cover;
+text-align:center;
+}
+
+.navfooter{
+
+text-align: center;
+
+  margin: 50px;
+position:relative;
+left :800px;
+}
+.ulfooter{
+	  list-style-type: none;
+}
+
+.lifooter{
+	
+}
+
+p{
+	 display: block;
 }
