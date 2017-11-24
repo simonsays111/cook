@@ -2,22 +2,23 @@
 width:20%;
 color:blue;
 text-align: left;
+float:left;
 }
 
 .logoimage{
- height: 100px;
-width: 100px;
+ height: 300px;
+width: 300px;
 }
 
 
-nav {
+topnav {
+text-align: center;
 
-	position:relative;
   margin: 50px;
 }
 
 ul {
-  overflow: auto;
+  
   list-style-type: none;
 }
 
