@@ -67,6 +67,7 @@ li.active a {
 }
 
 .footer{
+	margin-top:0px;
 	padding:2px;
 background-color: grey;
  background-size: cover;
@@ -89,6 +90,9 @@ left :800px;
 	
 }
 
+hr{
+	margin-bottom: 0px;
+}
 p{
 	 display: block;
 }
