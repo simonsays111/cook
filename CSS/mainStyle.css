@@ -6,9 +6,9 @@ height:100%;
 color:white;
 text-align: left;
 float:left;
-background-image: url("../images/background2.jpg");
+background-image: url("../images/JaffaPort11.jpg");
  background-repeat: no-repeat;
- background-size: cover;
+ background-size: 1000px 700px;
 overflow: hidden;
 }
 
@@ -104,6 +104,15 @@ left :800px;
 	  list-style-type: none;
 }
 
+.pfooter{
+	position: fixed ;
+	right:-600;
+	top:-100;
+	background-color:yellow;
+	width:700px;
+	 border-style: solid;
+    border-color: red;
+}
 .lifooter{
 	
 }
