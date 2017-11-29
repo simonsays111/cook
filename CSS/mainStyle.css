@@ -4,19 +4,17 @@ margin-left:-7px;
 width:100%;
 height:100%;
 color:white;
-text-align: left;
-float:left;
-background-image: url("../images/background2.jpg");
- background-repeat: no-repeat;
- background-size: cover;
-overflow: hidden;
+position: fixed;
+background-color:white;
+
+
 }
 
 
 .logoimage{
 float:left;
- height: 200px;
-width: 200px;
+ height: 100px;
+width: 100px;
 margin-top:16px;
 margin-left:10px;
 margin-bottom:1000px;
@@ -26,23 +24,18 @@ margin-bottom:1000px;
 
 topnav {
 
-
-padding:15px;
-	float:left;
-	position:relative;
-	margin-top:16px;
-	margin-left:10px;
-
+margin:0 auto; padding:0px 0 0; height:37px; float:left;
 }
 
 ul {
   
   list-style-type: none;
 padding:15px;
-	float:left;
+	float:right;
 	position:relative;
 	margin-top:16px;
-	margin-left:10px;
+	margin-right:300px;
+	
 }
 
 li {
@@ -56,6 +49,7 @@ padding:15px;
   margin-right: 0px;
   border-right: 1px solid #aaa;
   padding: 0 20px;
+  
 }
 
 li:last-child {
@@ -64,7 +58,7 @@ li:last-child {
 
 li a {
   text-decoration: none;
-  color: white;
+  color: black;
   font: 25px/1 Helvetica, Verdana, sans-serif;
   text-transform: uppercase;
   -webkit-transition: all 0.5s ease;
@@ -104,6 +98,15 @@ left :800px;
 	  list-style-type: none;
 }
 
+.pfooter{
+	
+	right:-600;
+	top:-100;
+	background-color:yellow;
+	width:700px;
+	 border-style: solid;
+    border-color: red;
+}
 .lifooter{
 	
 }
@@ -113,4 +116,11 @@ hr{
 }
 p{
 	 display: block;
+}
+
+.searchbar{
+	float:right;
+	position:relative;
+	margin-top:45px;
+	margin-right:-800px;
 }
