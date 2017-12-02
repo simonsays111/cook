@@ -9,8 +9,7 @@ ul {
   list-style-type: none;
 }
 
-li {s
-
+li {
   float: left;
   margin-right: 0px;
   border-right: 1px solid #aaa;
