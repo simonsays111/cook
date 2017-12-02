@@ -9,7 +9,7 @@ ul {
   list-style-type: none;
 }
 
-li {
+li {s
 
   float: left;
   margin-right: 0px;
