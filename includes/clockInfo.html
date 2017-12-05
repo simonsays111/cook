@@ -1,6 +1,8 @@
  <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jaffo Website </title> 
 <link rel="stylesheet" type="text/css" href="../CSS/clock.css">
 <style>
@@ -73,7 +75,57 @@ It was together with the clock towers in Safed, Acre, Haifa and Jerusalem featur
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZjdqBRej6kEatz8WUFIeYlCtQxP8bUIY	&callback=initMap">
-    </script>
+    </script></figure>
+	
+	
+
+<div class="w3-content" style="max-width:800px">
+  <img class="mySlides" src="https://www.israel21c.org/wp-content/uploads/2017/01/shutterstock_clocktower-1168x657.jpg" style="width:100%">
+  <img class="mySlides" src="http://www.planetware.com/photos-large/ISR/israel-jaffa-clock-tower.jpg" style="width:100%">
+  <img class="mySlides" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Jaffa_Clock_Tower_P1060427.JPG/800px-Jaffa_Clock_Tower_P1060427.JPG" style="width:100%">
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="https://www.israel21c.org/wp-content/uploads/2017/01/shutterstock_clocktower-1168x657.jpg" style="width:200px" onclick="currentDiv(1)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="http://www.planetware.com/photos-large/ISR/israel-jaffa-clock-tower.jpg" style="width:170px" onclick="currentDiv(2)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Jaffa_Clock_Tower_P1060427.JPG/800px-Jaffa_Clock_Tower_P1060427.JPG" style="width:170px" onclick="currentDiv(3)">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
 
  </body>
  
