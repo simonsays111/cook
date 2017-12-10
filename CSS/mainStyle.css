@@ -36,7 +36,7 @@ padding:15px;
 	
 }
 
-li {
+li.list {
 padding:15px;
 	float:left;
 	position:relative;
@@ -50,11 +50,11 @@ padding:15px;
   
 }
 
-li:last-child {
+li.list:last-child {
   border-right: none;
 }
 
-li a {
+li.list a {
   text-decoration: none;
   color: black;
   font: 25px/1 Helvetica, Verdana, sans-serif;
@@ -62,11 +62,11 @@ li a {
   -webkit-transition: all 0.5s ease;
 }
 
-li a:hover {
+li.list a:hover {
   color: #666;
 }
 
-li.active a {
+li.list active a {
   font-weight: bold;
   color: #333;
 }
