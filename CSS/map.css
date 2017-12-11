@@ -1,4 +1,7 @@
-body{background-color: white;}
+body{background-image: url("../images/shutterstock_clocktower-1168x657.jpg");
+background-repeat: no-repeat;
+background-attachment: scroll;
+}
 
 h1{color: black;
 text-align: center;
@@ -15,5 +18,4 @@ img {
 	padding-left: 35%;
 	padding-right: 35%;
 }
-
 	
