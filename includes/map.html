@@ -23,16 +23,48 @@
 <img src="../images/map.jpg"  usemap="#image-map">
 
 <map name="image-map">
-    <area target="_blank"  id="clock" alt="Clock Tower Square"   title="Clock Tower Square" href="clockInfo.html" coords="530,217,5" shape="circle">
-    <area target="_blank" alt="Abulafia Bakery"   title="Abulafia Bakery" href="#" coords="547,289,7" shape="circle">
-    <area target="_blank" alt="Jaffa Flea Market" title="Jaffa Flea Market" href="#" coords="556,256,564,259" shape="rect">
-    <area target="_blank" alt="Old Port" title="Old Port" href="#" coords="48,586,54,582,63,587,64,594,53,595" shape="poly">
+    <area target="_blank"  id="clock" alt="Clock Tower Square"   title="Clock Tower Square" href="clockInfo.html" coords="530,217,5" shape="circle" onmouseover="onMouseOver(clock);" onmouseout="onMouseOut();" >
+    <area target="_blank" alt="Abulafia Bakery"   title="Abulafia Bakery" href="#" coords="547,289,7" shape="circle"  onmouseover="onMouseOver(Abulafia);" onmouseout="onMouseOut();">
+    <area target="_blank" alt="Jaffa Flea Market" title="Jaffa Flea Market" href="#" coords="556,256,564,259" shape="rect" onmouseover="onMouseOver(Market);" onmouseout="onMouseOut();">
+    <area target="_blank" alt="Old Port" title="Old Port" href="#" coords="48,586,54,582,63,587,64,594,53,595" shape="poly" onmouseover="onMouseOver(Port);" onmouseout="onMouseOut();">
 </map>
 
-<image id="demo"></p>
+<image id="demo">
 
 
  <script>
+     
+     function onMouseOver(x){
+         var x,p;
+         
+         if(pic="clock"){
+           p="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/AgamisiurDSCN3794.JPG/250px-AgamisiurDSCN3794.JPG	";  
+         }
+         
+         else if(pic="Abulafia"){
+             p="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/AgamisiurDSCN3794.JPG/250px-AgamisiurDSCN3794.JPG	";  
+             
+         }
+         
+         else if(pic="Market"){
+            p="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/AgamisiurDSCN3794.JPG/250px-AgamisiurDSCN3794.JPG	";    
+         }
+             
+         else{
+              p="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/AgamisiurDSCN3794.JPG/250px-AgamisiurDSCN3794.JPG	";  
+             
+         }
+         
+         document.getElementById("demo").src=p;
+     }
+     
+     
+        function onMouseOut(){
+         
+           document.getElementById("demo").src="";  
+         }
+     
+     /*
 document.getElementById("clock").onmouseover=function(){
 
       document.getElementById("demo").src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/AgamisiurDSCN3794.JPG/250px-AgamisiurDSCN3794.JPG	";
@@ -43,6 +75,8 @@ document.getElementById("clock").onmouseover=function(){
     document.getElementById("demo").src="";
 
 	}
+    
+   */
  </script>
 	 
 </body>
