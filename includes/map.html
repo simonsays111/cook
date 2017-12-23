@@ -25,7 +25,6 @@
 
 <ol class="breadcrumb">
   <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-
   <li class="breadcrumb-item active">Map</li>
 </ol>
        
@@ -37,60 +36,66 @@
 <img src="../images/map.jpg"  usemap="#image-map">
 
 <map name="image-map">
-    <area target="_blank"  id="clock" alt="Clock Tower Square"   title="Clock Tower Square" href="clockInfo.html" coords="530,217,5" shape="circle" onmouseover="onMouseOver(clock);" onmouseout="onMouseOut();" >
-    <area target="_blank" alt="Abulafia Bakery"   title="Abulafia Bakery" href="#" coords="547,289,7" shape="circle"  onmouseover="onMouseOver(Abulafia);" onmouseout="onMouseOut();">
-    <area target="_blank" alt="Jaffa Flea Market" title="Jaffa Flea Market" href="#" coords="556,256,564,259" shape="rect" onmouseover="onMouseOver(Market);" onmouseout="onMouseOut();">
-    <area target="_blank" alt="Old Port" title="Old Port" href="#" coords="48,586,54,582,63,587,64,594,53,595" shape="poly" onmouseover="onMouseOver(Port);" onmouseout="onMouseOut();">
+    <area target="_blank"  id="clock" alt="Clock Tower Square"   title="Clock Tower Square" href="clockInfo.html" coords="530,217,5" shape="circle"  >
+    <area target="_blank"  id="Abulafia Bakery"  alt="Abulafia Bakery"   title="Abulafia Bakery" href="#" coords="547,289,7" shape="circle"  >
+    <area target="_blank" id="Jaffa Flea Market" alt="Jaffa Flea Market" title="Jaffa Flea Market" href="#" coords="556,256,564,259" shape="rect" >
+    <area target="_blank" id="Old Port" alt="Old Port" title="Old Port" href="#" coords="48,586,54,582,63,587,64,594,53,595" shape="poly" >
 </map>
 
-<image id="demo">
 
+    
+<div style="mouseoverlay:none;display:none;" id ="clockImage" >
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/AgamisiurDSCN3794.JPG/250px-AgamisiurDSCN3794.JPG"  >
+</div> 
+    
+    
+   <div style="mouseoverlay:none;display:none;" id="AbulafiaBakeryImage" > 
+  <img  src="https://www.johnnyjet.com/wp-content/uploads/2013/10/Baked-Goods-Abulafia-610x457.jpg" >
+     </div>   
+       
+    
+      <div style="mouseoverlay:none;display:none;" id="market" > 
+    <img  src="http://wiki.ifmsa.org/scope/images/8/8c/Pishpeshim.jpg" >
+    </div>   
+    
+    
+     <div style="mouseoverlay:none;display:none;" id="port" > 
+    <img  src="https://media-cdn.tripadvisor.com/media/photo-s/04/62/1f/52/jaffa-port.jpg" >
+    </div> 
+ 
+  
+    
 
  <script>
      
-     function onMouseOver(x){
-         
-         var input=x;
-         if(input=="clock"){
-           p="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/AgamisiurDSCN3794.JPG/250px-AgamisiurDSCN3794.JPG	";  
-         }
-         
-         else if(input=="Abulafia"){
-             p="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/AgamisiurDSCN3794.JPG/250px-AgamisiurDSCN3794.JPG	";  
-             
-         }
-         
-         else if(input=="Market"){
-            p="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/AgamisiurDSCN3794.JPG/250px-AgamisiurDSCN3794.JPG	";    
-         }
-             
-         else{
-              p="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/AgamisiurDSCN3794.JPG/250px-AgamisiurDSCN3794.JPG	";  
-             
-         }
-         
-         document.getElementById("demo").src=p;
-     }
+     
+      $(document).ready(function (){
+          
+        $('#clock').hover(
+        function() { $('#clockImage').show() },
+        function() { $('#clockImage').hide() }
+    );  
+     
+    $('#Abulafia Bakery').hover(
+        function() { $('#AbulafiaBakeryImage').show() },
+        function() { $('#AbulafiaBakeryImage').hide() }
+    );    
+     
+     $('#Jaffa Flea Market').hover(
+        function() { $('#market').show() },
+        function() { $('#market').hide() }
+    );    
+     
+      $('#Old Port').hover(
+        function() { $('#port').show() },
+        function() { $('#port').hide() }
+    );    
+     
+   }); 
+
      
      
-        function onMouseOut(){
-         
-           document.getElementById("demo").src="";  
-         }
-     
-     /*
-document.getElementById("clock").onmouseover=function(){
 
-      document.getElementById("demo").src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/AgamisiurDSCN3794.JPG/250px-AgamisiurDSCN3794.JPG	";
-
-	}
-	
-	document.getElementById("clock").onmouseout=function(){
-    document.getElementById("demo").src="";
-
-	}
-    
-   */
  </script>
 	 
 </body>
