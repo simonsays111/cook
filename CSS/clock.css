@@ -1,27 +1,244 @@
-body{background-color: #b3ccff;}
+body{background-color: white;}
 
 .mySlides{display:none};
-.demo{cursor:pointer};
+.demo{cursor:pointer;}
 
-h1,h2{color: white;
+
+h1{	font-family: monospace;
+text-align: center;
 }
-h1{text-align: left;}
-h2{text-align: left;}
-h3{color: #ff66d9;}
+h2{text-align: left;
+font-family: monospace;
+position: relative;
+top: 40px;}
 
-.introduction{font-family: david;
-font-size: 20px;
-text-align: lefft;
+h3{text-align: left;
+position: relative;
+top: -50px;}
+
+.introduction{font-family: monospace;
+font-size: 15px;
+text-align: left;
+position: relative;
+top: 50px;
 }
 
-.history{font-family: david;
-font-size: 20px;
-text-align: lefft;
+.history{font-family: monospace;
+font-size: 15px;
+text-align: left;
+position: relative;
+top: 60px;
 }
 
-figure{border: 3px dotted #b366ff;
+.inline-list{position: relative;
+display: -webkit-box;
+list-style-type:none;}
+
+.list{margin: 10px;
+}
+
+.facebook{float: right;
+position: relative;
+right: 50px;
+top: -20px;
 }
 
 #map{position:relative;
 float: right;
+top: 65px;
+right: 470px;
+width: 30%;
+height: 400px;
+}
+
+.video{position: relative;
+top: 65px;
+}
+
+.photos{
+	position:relative;
+	top: 75px;
+}
+
+<!--FOOTER -------------------->
+.footer-style{background-color: #292c2f;
+}
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px;
+    font-family: sans-serif;
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+
+.footer-distributed .a .footer-font { font-family: monospace;}
+
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+    
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+    font-family:cursive;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+    font-family:cursive;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+    font-family:cursive;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+    font-family:cursive;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px;
+        font-family: sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+
 }
