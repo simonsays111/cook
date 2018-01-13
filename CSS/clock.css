@@ -26,9 +26,15 @@ top: 10px;
 .history{font-family: monospace;
 font-size: 15px;
 text-align: left;
-position: relative;
-top: 40px;
+float:left;
+
+
 width: 50%;
+}
+
+.video{float: right;
+position: relative;
+
 }
 
 .inline-list{position: relative;
@@ -49,13 +55,10 @@ top: -20px;
         width: 70%;
 		  margin: auto;
 		  clear: both;
-
+top:20px;
 }
 
-.video{float: right;
-position: relative;
-bottom: 350px;
-}
+
 
 .photos{
 	position:relative;
