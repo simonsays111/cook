@@ -1,0 +1,61 @@
+body{background-color: white;}
+
+.mySlides{display:none};
+.demo{cursor:pointer;}
+
+
+h1{	font-family: monospace;
+text-align: left;
+}
+h2{text-align: left;
+font-family: monospace;
+position: relative;
+top: 40px;}
+
+h3{text-align: left;
+position: relative;
+top: -5px;}
+
+.introduction{font-family: monospace;
+font-size: 15px;
+text-align: left;
+position: relative;
+top: 10px;
+}
+
+.history{font-family: monospace;
+font-size: 15px;
+text-align: left;
+float:left;
+
+
+width: 52%;
+}
+
+.video{float: right;
+position: relative;
+
+}
+
+.inline-list{position: relative;
+float: right;
+display: -webkit-box;
+list-style-type:none;}
+
+.list{margin: 10px;
+}
+
+#map{
+ height: 500px;
+        width: 100%;
+		  margin: auto;
+		  clear: both;
+top:20px;
+}
+
+
+
+.photos{
+	position:relative;
+	top: 75px;
+}
