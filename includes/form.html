@@ -96,7 +96,7 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="l_name" id="l_name"  placeholder="Enter your last name " required>
+									<input   type="text" class="form-control" name="l_name" id="l_name"  placeholder="Enter your last name " required >
 								</div>
 							</div>
                                 <p id="lastValidation">The last name must be between 2 and 50 characters</p>
@@ -286,7 +286,7 @@
 
     // If x is Not a Number or less than one or greater than 10
     if (isNaN(x) && x.length>=2 && x.length<=50) {
-        text = "Input OK";
+        text = '<span class="glyphicon glyphicon-ok "></span>';
     } else {
         text = "The first name must be between 2 and 50 characters";
     }
@@ -300,13 +300,15 @@
 
     // If x is Not a Number or less th  an one or greater than 10
     if (isNaN(y) && y.length>=2 && y.length<=50) {
-        text = "Input OK";
+          text = '<span class="glyphicon glyphicon-ok "></span>';
+       
+
     } else {
         text = "The last name must be between 2 and 50 characters";
+         document.getElementById("lastValidation").innerHTML = text; 
     }
-    document.getElementById("lastValidation").innerHTML = text;       
-             
-             
+   
+         document.getElementById("lastValidation").innerHTML = text;       
          }
           
           
