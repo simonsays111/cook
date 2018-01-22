@@ -16,11 +16,10 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
-<title>Jaffo Website </title> 
+<title>Clock Info </title> 
 <link rel="stylesheet" type="text/css" href="../CSS/clock.css">
 <!-- Header and Footer bootstrap css -->
    <link rel="stylesheet" href="../CSS/headerFooter.css" >
-
 
 </head>
 
@@ -45,8 +44,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
       <ul class="nav navbar-nav">
-        <li><a href="#">Plan Your Trip</a></li>
-          <li><a href="#">Places To See</a></li>
+      <li><a href="form.html">Plan Your Trip</a></li>
+          <li><a href="map.html">Places To See</a></li>
            <li><a href="#">Things To Do</a></li>
           <li><a href="#">About Jaffa</a></li>
         <li class="dropdown">
@@ -120,22 +119,10 @@ It was together with the clock towers in Safed, Acre, Haifa and Jerusalem featur
 
 
 <div id="map"></div> 
-    <script>
-      function initMap() {
-        var uluru = {lat: 32.054944, lng:  34.756279};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 17,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
+<script src="../JS/map.js"></script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZjdqBRej6kEatz8WUFIeYlCtQxP8bUIY	&callback=initMap">
-    </script></figure>
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZjdqBRej6kEatz8WUFIeYlCtQxP8bUIY&callback=initMap">
+    </script>
 
 
 <h2>Gallery</h2>
@@ -158,41 +145,14 @@ It was together with the clock towers in Safed, Acre, Haifa and Jerusalem featur
   </div>
 </div>
 
+<script src="../JS/map.js"></script>
 
 
 
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-  }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-opacity-off";
-}
-</script></div>
+</div>
 
 
- </body>
+
  
        <!------------FOOTER--------------->
             
@@ -231,7 +191,7 @@ function showDivs(n) {
 				<p class="footer-company-about">
                     <span>About OldJaffa Team </span>
 					We grow in jaffa, studied in Jaffa, eat in Jaffa and know everything you 
-have to see in Jaffa. Let us Help you bring your time here to the Max!
+                    have to see in Jaffa. Let us Help you bring your time here to the Max!
 				</p>
 
 				<div class="footer-icons">
@@ -242,10 +202,9 @@ have to see in Jaffa. Let us Help you bring your time here to the Max!
 					<a href="#"><i class="fa fa-github"></i></a>
 
 				</div>
-
 			</div>
 </div>
 		</footer>
- 
+  </body>
  
  </html>
