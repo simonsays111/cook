@@ -1,0 +1,68 @@
+
+
+.containerM {
+    box-sizing: border-box;
+    float:center;
+    padding: 15px;    
+    border: 2px dotted gray; 
+    text-align: center;
+}
+
+
+.clear {
+    clear:both;
+}
+
+.merkaz {
+   border:1px dotted cursive;
+    
+   
+   margin:0;
+   padding:0;
+   text-align: center;
+   box-sizing: border-box;
+}
+
+
+h1 {
+    text-align: center;
+    font-family:"Comic Sans MS";
+    color:burlywood
+}
+
+p {
+    font-family:cursive;
+    color:gray;
+    
+}
+
+.question {
+    text-align: center;
+    background-color:dimgray;
+    color:aliceblue;
+   
+}
+
+.question:hover {
+    
+    background-color:black;
+    color: white;
+}
+
+.question:visited {
+    
+    background-color:black;
+    color: white;
+}
+
+.ask {
+    width:"100%";
+    
+    font-family:cursive;
+    
+    
+}
+
+button:hover { 
+    background-color: yellow;
+}

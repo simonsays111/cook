@@ -1,0 +1,11 @@
+The page bulit using Boostrap V3 method, 
+a css file of bootstrap is attached to index html
+as well as customize css file.
+
+הקבצי css נצאים בתוך תיקיית "css",
+התמונות נמצאים בתיקיית img.
+
+
+Meiran Galis - 201524840
+Shimon Eidelman - 308481902
+Michal Matkovitch - 205708589

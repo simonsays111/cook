@@ -1,10 +1,12 @@
+<!--OldJaffa.com Tourist site--->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
     <title>OldJaffa.com - Everything you need, One place.</title>
 
     <!-- Bootstrap Footer Social icons -->
@@ -13,8 +15,15 @@
     <!--/ Bootstrap Footer Social icons -->  
       
       
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+      <!-- jQuery script -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+      <!-- JavaScript script -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      
+      
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="CSS/custom.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,9 +38,6 @@
     
   <body>
       
-
-      
-      
       
       <!--------NAV---------->
       
@@ -39,38 +45,28 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="indexSource.html">OldJaffa</a>
+      <a class="navbar-brand" href="../index.html">OldJaffa</a>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+   
+    <div class="collapse navbar-collapse" id="bs-example">
       <ul class="nav navbar-nav">
         <li><a href="includes/form.html">Plan Your Trip</a></li>
           <li><a href="includes/map.html">Places To See</a></li>
-           <li><a href="#">Things To Do</a></li>
-          <li><a href="#">About Jaffa</a></li>
+            <li><a href="../includes/FAQ.html">FAQ</a></li>
+          <li><a href="includes/about.html">About Jaffa</a></li>
         <li class="dropdown">
         </li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Contact Us</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">About OldJaffa.com</a></li>
-            <li><a href="#">Terms Of Use</a></li>
-            <li><a href="#">Local Culture</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Rate Us!</a></li>
-          </ul>
-        </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -79,23 +75,24 @@
       
       
       <!--------HEADER------->
+      
         <header class="bottomSpacing">
          <div class="jumbotron">
           <div class="container text-center fontTitle">
-              <h1>OldJaffa.com</h1>
-              <p>Everything you need, One place.</p>
-          </div>
-        </div>
+                      <h1>OldJaffa.com</h1>
+                      <p>Everything you need, One place.</p>
+                  </div>
+                </div>
             <div class="container text-center">
-                <p><a class="btn btn-primary btn-lg  buttonHeader" href="#" role="button">Book Your Tour!</a></p></div>
+                <p><a class="btn btn-primary btn-lg  buttonHeader" href="includes/form.html" role="button">Book Your Tour!</a></p></div>
       </header>
       
       
-      <!-------------MAIN---------->
+      <!-------------MAIN---------------------------------------->
       
      
       
-      <!----Pictures ------------->
+      <!----Pictures (grid) ------------->
     
       
       
@@ -108,7 +105,7 @@
                <div class="row">
                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 bottomSpacing">
                    
-                   <iframe width="552" height="175" src="https://www.youtube.com/embed/KZhlLsJoEgA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen ></iframe>
+                   <iframe width="100%" height="175" src="https://www.youtube.com/embed/KZhlLsJoEgA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen ></iframe>
                
 
                </div>
@@ -134,8 +131,8 @@
                </div> 
                    </div>
                
-               
-               <div class="row">
+               <div class="bottomSpacing"></div>
+               <div class="row ">
                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                 <div class="hovereffect">
                     <img class="img-responsive" src="images/street_in_old_jaffa_port_fotoarabia_0000117440.jpg" alt="Old alleyways">
@@ -173,7 +170,7 @@
                     <img class="img-responsive" src="images/clock_300x200.jpg" alt="History">
                     <div class="overlay">
                        <h2>History</h2>
-                       <a class="info" href="#">More Info</a>
+                       <a class="info" href="includes/clockInfo.html">More Info</a>
                     </div>
                 </div>
                </div>   
@@ -198,7 +195,7 @@
                
                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                    
-                     <iframe width="555px" height="320" src="https://www.youtube.com/embed/m8WaRyQ7keQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                     <iframe width="100%" height="320" src="https://www.youtube.com/embed/m8WaRyQ7keQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
                 </div>
                                  
                </div>
@@ -207,26 +204,28 @@
            </article>
            
            
-                <section class="container">
+    <section class="container">
+        <div class="row ">
+       <div class="col-12">
       
-          <img class="mySlides" src="images/carusel1.jpg" width="1140px" height="600px" alt="" >
-          <img class="mySlides" src="images/carusel2.jpg" width="1145px" height="600px" alt="">
-        <img class="mySlides" src="images/carusel3.jpg" width="1145px" height="600px" alt="">
-        <img class="mySlides" src="images/carusel4.jpg" width="1145px" height="600px" alt="">
+          <img class="mySlides" src="images/carusel1.jpg" width="99%" height="600px" alt="" >
+          <img class="mySlides" src="images/carusel2.jpg" width="99%" height="600px" alt="">
+        <img class="mySlides" src="images/carusel3.jpg" width="99%" height="600px" alt="">
+        <img class="mySlides" src="images/carusel4.jpg" width="99%" height="600px" alt="">
+                   
+        </div>
+        </div>
       </section>
 
     </main>     
       
-
+    <aside>
       
       
       
       
-      
-      
-      
-      
-      
+      </aside>
+    
       
       <!------------FOOTER--------------->
             
@@ -290,7 +289,7 @@ have to see in Jaffa. Let us Help you bring your time here to the Max!
       
 
       
-     		<script>
+    <script>
 		// Automatic Slideshow - change image every 3 seconds
 		var myIndex = 0;
 		carousel();
@@ -305,11 +304,9 @@ have to see in Jaffa. Let us Help you bring your time here to the Max!
 			x[myIndex-1].style.display = "block";
 			setTimeout(carousel, 3000);
 		}
-		</script> 
+      </script> 
       
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+
   </body>
 </html>

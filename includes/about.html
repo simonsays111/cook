@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Places To See in OldJaffa</title>
+      
+          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+      <!-- jQuery script -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+      <!-- JavaScript script -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      
+
+        <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Bootstrap Footer Social icons -->
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/css/Footer-with-social-icons.css">
+      
+        <!--/ Header and Fotter -->  
+      
+   <link rel="stylesheet" href="../CSS/headerFotter.css" >
+      
+       <!--/ custom css -->
+      
+      <link rel="stylesheet" href="../CSS/aboutCustom.css" >
+      
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>   
+    <![endif]-->
+      
+      
+    <script>
+
+    function trueResults(id){ 
+        
+        document.getElementById(id).style.background="#32ff2b";
+        document.getElementById(id).style.color="white";
+        window.setTimeout(function(){
+                   (document.getElementById(id).style.background="gray")}, 10000);
+    
+       
+            }
+        
+        function falseResult(id){
+            
+        document.getElementById(id).style.background="red";
+        document.getElementById(id).style.color="white";
+                 window.setTimeout(function(){
+                   (document.getElementById(id).style.background="gray")}, 1000);
+    
+        }
+    
+      
+      
+    </script>
+  </head>
+    
+    
+  <body>
+      
+      <!--------NAV---------->
+      
+      <nav class="navbar navbar-inverse ">
+  <div class="container-fluid">
+      
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        
+      <a class="navbar-brand" href="../index.html">OldJaffa</a>
+    </div>
+
+   
+    <div class="collapse navbar-collapse" id="bs-example">
+      <ul class="nav navbar-nav">
+        <li><a href="../includes/form.html">Plan Your Trip</a></li>
+          <li><a href="../includes/map.html">Places To See</a></li>
+           <li><a href="../includes/FAQ.html">FAQ</a></li>
+          <li><a href="../includes/about.html">About Jaffa</a></li>
+        <li class="dropdown">
+        </li>
+      </ul>
+        
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+      
+        <!-------------MAIN--------------->
+      
+<ol class="breadcrumb" style="background-color:white;">
+  <li class="breadcrumb-item" style="color:blue;"><a href="../index.html">Home</a></li>
+  <li class="breadcrumb-item active">About</li>
+</ol>
+      
+<div class="container-fluid">
+   
+    <h1> Brief History About Jaffa</h1>
+      
+<div class="row">
+    
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          
+         <aside>
+        <div class="containerM">
+        <div class="ask"><b>Is there a flea market in Jaffa ?</b><br><br>
+        <div style="text-align: left">
+
+            
+       </div>
+        </div>       
+           
+        <div class="clear"></div>             
+        <input type="button" id="true1" onClick="trueResults(id);"  class="question" value="Yes">
+        <input type="button" id="false1" onClick="falseResult(id);" class="question" value="No">
+         <input type="button" id="false2" onClick="falseResult(id);" class="question" value="Maybe">
+        
+      
+        </div>
+        
+        
+          <div class="containerM">
+        <div class="ask"><b>When did Jaffa esteblished ?</b><br><br>
+        <div style="text-align: left">
+
+            
+       </div>
+        </div>       
+           <div class="clear"></div>             
+        <input type="button" id="false3" onClick="falseResult(id);"  class="question" value="2000 BCE">
+        <input type="button" id="true2" onClick="trueResults(id);" class="question" value="7500 BCE">
+         <input type="button" id="false4" onClick="falseResult(id);" class="question" value="87 ">
+        
+      
+        </div>
+        
+            <div class="containerM">
+        <div class="ask"><b>Did Napoleon Bonaparte visit in Jaffa?</b><br><br>
+        <div style="text-align: left">
+
+            
+       </div>
+        </div>       
+           <div class="clear"></div>             
+        <input type="button" id="false5" onClick="falseResult(id);"  class="question" value="Absolutly NO">
+        <input type="button" id="false6" onClick="falseResult(id);" class="question" value="Almost">
+         <input type="button" id="true3" onClick="trueResults(id);" class="question" value="Yep, at 1799">
+        
+      
+        </div>
+       </aside>  
+        
+    </div>
+   
+    
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 background">
+    <p>
+<b>Jaffa</b> (also known as Yafo) is the ancient port city out of which Tel Aviv has now grown. Jaffa has, in recent years, like much of South Tel Aviv, been regenerated with the old narrow streets and courtyards becoming a another highly desirable part of Tel Aviv’s urban tapestry. <br><br>
+
+<b>Jaffa flea market</b> is a well known attraction of the area, with vendors selling a diverse range of interesting and unique products. Meanwhile the narrow passageways and ancient buildings in the Old City of Jaffa are worlds away from modern Tel Aviv.<br><br>
+
+Jaffa's beautiful harborJaffa’s beautiful harbor; bachmont, on FlickrHistory of Jaffa
+The <b>history</b> of Jaffa is a long one. As of the world’s oldest ports, Jaffa is thought to have been the port from which Jonah left in the story of the Whale! The port continued to be important through history, and served as the main entry point to the land of Israel through until the late 19th century when Jews from around the world began to return to Israel. It was through Jaffa that they entered the country and in Jaffa that many initially settled. The huge population increase led to overcrowding, and tense relations developed between the Jewish and Arab residents of the city. The result was that Jews began building outside of Jaffa, firstly neighborhoods such as Neve Tzedek, and later the city of Tel Aviv.<br><br>
+
+As Tel Aviv developed, Jaffa decayed. By the 1940’s Tel Aviv was so much larger than Jaffa, then dominantly Arab as most Jews had moved out, that it was made into a neighborhood of Tel Aviv to create the official title of the city of Tel Aviv-Yafo. The decay continued until the municipality created a Development Organization to oversee the restoration of Jaffa, which continues today. In late 2011, a new Old Jaffa Visitors Center opened to the public and this features multimedia displays depicting Jaffa through the ages, as well as self-guided walking tours of the city as it is today.<br><br>
+
+
+There are lots of <b>great things to see in Jaffa</b>. Since its restoration, it has become a popular tourist attraction, with people visiting it as a part of Tel Aviv, and as a city of interest on its own. Jaffa is a real melting pot with Jewish and Arab populations living and breathing the same closely-packed air. It always feels like Jaffa is in a constant state of flux as people rush about on their daily business. The Flea Market is a key site, and the sites, sounds, and smells of the small alleyways and streets which make up this city are lined with artists galleries and studios, as well as boutique and craft shops. Jaffa also has some unique and interesting restaurants.<br><br>
+
+<b>The Jaffa Port</b> is still being excavated, but has transformed into a unique destination, still used by fishermen, yet hosting a great array of cafes and restaurants, as well as the Jaffa Port Market. The views from here across to modern Tel Aviv, especially at sunset are incredible. Meanwhile, the gardens next to the sea are picturesque.<br><br>
+
+
+<b>Restaurants</b> and cafes in Jaffa offer the full range of food that Tel Aviv has become known for although there is a wide range of more oriental and Middle Eastern styles of food. For instance, one local institution Dr Shakshuka serves this unique tomato and egg based dish originating from Libya to crowds of natives and tourists alike.<br><br>
+
+<b>What’s near to Jaffa:</b> HaTachana, Tel Aviv’s Old Railway station is a short stroll up the the Mediterranean Coast. Meanwhile the neighborhood of Florentin offers one the chance to see the ‘old’ South Tel Aviv – still to be regenerated with a fascinating array of shops selling all varieties of products. And, of course, there are many other great things to do in Tel Aviv.
+        </p>
+</div>
+    
+<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+    <img src="../images/clock_300x200.jpg" width="100%"> <br><br>
+    <img src="../images/about1.jpg" width="100%"><br><br>
+    <img src="../images/about2.jpg" width="100%"><br><br>
+    <img src="../images/about3.jpg" width="100%"><br><br>
+    <img src="../images/about4.jpg" width="100%"><br><br>
+    </div>
+    
+    </div>
+</div>      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!------------FOOTER--------------->
+                   
+            
+              
+          	<footer class="clear footer-distributed">
+            <div class="footer-style">
+		
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+                    <p><span>Yefet 1 </span> Tel-Aviv-Jaffa.  
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+                    <p>+972 50 6996868 </p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+                    <p><a href="mailto:help@OldJaffa.com">help@OldJaffa.com </a></p>
+				</div>
+
+			</div>
+                
+                	<div class="footer-center">
+
+				<h3>Old<span>Jaffa</span></h3><br><br><br><br>
+
+
+				<p class="footer-company-name">All rights Reserved OldJaffa.com &copy; 2018</p>
+			</div>
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+                    <span>About OldJaffa Team </span>
+					We grow in jaffa, studied in Jaffa, eat in Jaffa and know everything you 
+have to see in Jaffa. Let us Help you bring your time here to the Max!
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/theoldjaffa/"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+</div>
+		</footer>
+
+      
+
+  </body>
+</html>

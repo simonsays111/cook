@@ -10,7 +10,7 @@
     overflow: hidden !important;
     -webkit-overflow-scrolling: touch;
 }
-body, html{
+body  {
      height: 100%;
  	background-repeat: no-repeat;
  	background:url();
@@ -23,10 +23,13 @@ body, html{
 width: 100%;
 }
 
-h1.title { 
-	font-size: 50px;
-	font-weight: 400;
-font-family: monospace;  	
+.title { 
+
+    color: dimgray;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive;
+    text-align: center;
+
 }
 
 hr{

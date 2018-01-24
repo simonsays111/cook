@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    
+    width: 25%;
+    float: left;
+
+    
+}
+
+aside {
+    
+    width: 75%;
+    float: left;
+    background-color: forestgreen;
+
+}
+
+.me {
+    
+    background-color: aqua;
+    
+}
