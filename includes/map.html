@@ -7,9 +7,10 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="../CSS/bootstrap.min.css" rel="stylesheet">
+
     
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     
             <!-- Bootstrap Footer Social icons -->
       <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -21,7 +22,45 @@
     <link rel="stylesheet" type="text/css" href="../CSS/map.css">  
        <!--/ custom css -->
 
+ <script>
+     
+     
+      $(document).ready(function (){
+          
+        $('#clockImage').hover(
+        function() { $('#clock').show();
+                    $('#clock').css("float", "right");},
+        function() { $('#clock').hide() }
+    );  
+     
+    $('#AbulafiaBakery').hover(
+        function() { $('#AbulafiaBakeryImage').show();
+                    $('#AbulafiaBakeryImage').css("float", "right");},
+        function() { $('#AbulafiaBakeryImage').hide() }
+    );    
+     
+     $('#JaffaFleaMarket').hover(
+        function() { $('#market').show();
+                 $('#market').css("float", "right");},
+        function() { $('#market').hide() }
+    );    
+     
+      $('#OldPort').hover(
+        function() { $('#port').show();
+                   $('#port').css("float", "right");},
+        function() { $('#port').hide() }
+    );    
+        
+          $('#churchPeters').hover(
+        function() { $('#church').show();
+                   $('#church').css("float", "right");},
+        function() { $('#church').hide() }
+    );    
+     
+   }); 
 
+
+ </script>
 </head>
 
  
@@ -48,15 +87,15 @@
     <div class="collapse navbar-collapse" id="bs-example">
       <ul class="nav navbar-nav">
         <li><a href="../includes/form.html">Plan Your Trip</a></li>
-          <li><a href="../includes/map.html">Places To See</a></li>
-            <li><a href="../includes/FAQ.html">FAQ</a></li>
-          <li><a href="../includes/about.html">About Jaffa</a></li>
+          <li class="active"><a href="../includes/map.html">Places To See</a></li>
+           <li><a href="../includes/FAQ.html">FAQ</a></li>
+          <li ><a href="../includes/about.html">About Jaffa</a></li>
         <li class="dropdown">
         </li>
       </ul>
         
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#" title="Not Vaild">Contact Us</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -66,7 +105,7 @@
 
 <ol class="breadcrumb" style="background-color:white;">
   <li class="breadcrumb-item" style="color:blue;"><a href="../index.html">Home</a></li>
-  <li class="breadcrumb-item active">PlacesToSee</li>
+  <li class="breadcrumb-item active">Places To See</li>
 </ol>
     
     
@@ -75,14 +114,14 @@
 <h1 class="title">Jaffa City Map</h1>
 
     <div class="container-fluid;"> 
-   <p>Click on the the place that you want to get information:</p>
+   <p><b>Put your mouse (in the map) on the place that you want to get information :</b></p>
 
 <img id="mainMap" src="../images/Jaffa_map1.jpg"  usemap="#mainMap" alt="Jaffa Map">
 
 <map name="mainMap">
   
 <map name="mainMap" id="mainMap">
-    <area alt=""  id="clockImage" title="Clock" href="../includes/clockinfo.html" shape="poly" coords="440,202,469,199,468,228,447,236" />
+    <area alt=""  id="clockImage" title="Clock" href="../includes/clockInfo.html" shape="poly" coords="440,202,469,199,468,228,447,236" />
     <area alt="" id="AbulafiaBakery" title="Abulafia" href="#" shape="poly" coords="473,278,491,289,483,313,467,302" />
     <area alt="" id="JaffaFleaMarket" title="Fleamarket" href="#" shape="poly" coords="525,169,594,202,580,293,492,241" />
     <area alt="" id="OldPort" title="Port" href="#" shape="poly" coords="115,132,139,143,84,282,63,284"/>
@@ -163,9 +202,9 @@ have to see in Jaffa. Let us Help you bring your time here to the Max!
 				<div class="footer-icons">
 
 					<a href="https://www.facebook.com/theoldjaffa/"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-github"></i></a>
+					<a href="#" title="Not Vaild"><i class="fa fa-twitter"></i></a>
+					<a href="#" title="Not Vaild"><i class="fa fa-linkedin"></i></a>
+					<a href="#" title="Not Vaild"><i class="fa fa-github"></i></a>
 
 				</div>
 
@@ -173,47 +212,7 @@ have to see in Jaffa. Let us Help you bring your time here to the Max!
 </div>
 		</footer>
 
- <script>
-     
-     
-      $(document).ready(function (){
-          
-        $('#clockImage').hover(
-        function() { $('#clock').show();
-                    $('#clock').css("float", "right");},
-        function() { $('#clock').hide() }
-    );  
-     
-    $('#AbulafiaBakery').hover(
-        function() { $('#AbulafiaBakeryImage').show();
-                    $('#AbulafiaBakeryImage').css("float", "right");},
-        function() { $('#AbulafiaBakeryImage').hide() }
-    );    
-     
-     $('#JaffaFleaMarket').hover(
-        function() { $('#market').show();
-                 $('#market').css("float", "right");},
-        function() { $('#market').hide() }
-    );    
-     
-      $('#OldPort').hover(
-        function() { $('#port').show();
-                   $('#port').css("float", "right");},
-        function() { $('#port').hide() }
-    );    
-        
-          $('#churchPeters').hover(
-        function() { $('#church').show();
-                   $('#church').css("float", "right");},
-        function() { $('#church').hide() }
-    );    
-     
-   }); 
 
-     
-     
-
- </script>
 	 
 </body>
 </html> 
